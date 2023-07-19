@@ -1,2 +1,1 @@
-# Vishwacon23
-VIIT Vishwacon-23
+# VIIT-Vishwacon
