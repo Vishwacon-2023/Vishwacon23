@@ -537,3 +537,24 @@ nav .navbar-nav li a {
 	
 	
 }
+
+/* Works on Firefox */
+* {
+  scrollbar-width: 1em;
+  scrollbar-color: #857492 #372e83 ;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+*::-webkit-scrollbar-track {
+  background: #372e83;
+  /* border-radius: 100vw; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #857492;
+  border-radius: 100vw;
+}
