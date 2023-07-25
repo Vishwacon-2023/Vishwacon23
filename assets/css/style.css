@@ -178,6 +178,9 @@
 
 .feature-item {
   transition: .5s;
+  margin: 2px;
+  text-decoration: none;
+ 
 }
 
 .feature-item:hover {
@@ -511,3 +514,58 @@ h1 {
   }
 }
 
+/* Carousel container */
+.PriceBlocks-sliderContainer {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Carousel animation */
+.PriceBlocks-slider {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+/* Slide animation keyframes */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  60% {
+    transform: translateX(-300%);
+  }
+  80% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+
+/* Slide container */
+.PriceBlock-container {
+  width: 100%;
+}
+
+/* Set the carousel items to be displayed side by side */
+.PriceBlock {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Optional: Add some spacing between slides */
+.PriceBlock-container + .PriceBlock-container {
+  margin-left: 10px;
+}
+
+/* Optional: Hide overflow to prevent content from showing outside the container */
+.PriceBlock-list {
+  overflow: hidden;
+}
