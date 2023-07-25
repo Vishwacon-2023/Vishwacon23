@@ -7,27 +7,257 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.container {
-  height: 100vh;
+
+/*  */
+.ConfBanner {
+  background: url('../img/business-meeting.webp'); /* Replace with the path to your image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* 100% of viewport height */
+  display: flex;
+  align-items: center;
+}
+
+/* Heading styles */
+.ConfBanner h1 {
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left: 50px; /* Adjust this value to add space between the image and text */
+}
+/* Container 1 */
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e3f2fd;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main_title h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cardname {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fbfbfb;
+}
+
+.buttonTheme {
+  margin-right: 10px;
+}
+
+/* Tables */
+table {
   width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Images */
+.image-right {
+  float: right;
+  margin: 0 0 20px 20px;
+  max-width: 250px;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .col-sm-10 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-right {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .table {
+    font-size: 16px;
+  }
+
+  /* Adjust padding for smaller screens */
+  .container1 {
+    padding: 10px;
+  }
+}
+  
+
+/* ---Container 2 ------- */
+
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e3f2fd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main_title h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cardname {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #f3f3f3;
+}
+
+.buttonTheme {
+  margin-right: 10px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Images */
+.image-right {
+  float: right;
+  margin: 0 0 20px 20px;
+  max-width: 250px;
+}
+
+.image-left {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 250px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .col-sm-10 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-right, .image-left {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  .table {
+    font-size: 16px;
+  }
+}
+
+
+
+
+/* ---------------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e3f2fd;
+
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #e3f2fd;
 }
-/* ---------- */
-.image-right {
-  float: right;
-  margin: 10px;
-  max-width: 300px; /* Adjust the size as needed */
-}
-
-.image-left {
-  float: left;
-  margin: 10px;
-  max-width: 300px; /* Adjust the size as needed */
-}
-/* ---------------- */
 .testimonial {
   position: relative;
   max-width: 900px;
@@ -51,8 +281,9 @@
   width: 100%;
 }
 .cardname {
+
   font-weight: bold;
-  font-size: 1.2rem; /* or any other size that corresponds to h3 */
+  font-size: 28px; /* or any other size that corresponds to h3 */
 }
 table {
   width: 70%;
@@ -72,10 +303,6 @@ td ,th{
   font-size: 14px;
   font-weight: 400;
   color: #333;
-}
-.slide .quote-icon {
-  font-size: 30px;
-  color: #4070f4;
 }
 .slide .details {
   display: flex;
@@ -115,11 +342,118 @@ td ,th{
 .swiper-pagination-bullet-active {
   background-color: #4070f4;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .slide p {
     padding: 0 20px;
   }
   .nav-btn {
     display: none;
+  }
+}
+
+
+/* container 4  */
+
+.container4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e3f2fd;
+  
+}
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.main_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main_title h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.cardname {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #a7a7a8;
+}
+
+.buttonTheme {
+  margin-right: 10px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Images */
+.image-right {
+  float: right;
+  margin: 0 0 20px 20px;
+  max-width: 250px;
+}
+
+.image-left {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 250px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .col-md-6.offset-md-3 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .image-right, .image-left {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+
+  table {
+    font-size: 16px;
   }
 }
