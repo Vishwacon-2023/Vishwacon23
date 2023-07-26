@@ -1,8 +1,7 @@
 
 .faq-section {
     background: #fdfdfd;
-    min-height: 100vh;
-    padding: 10vh 0 0;
+    min-height: 30vh;
 }
 .faq-title h2 {
   position: relative;
@@ -17,7 +16,7 @@
     left: 50%;
     width: 80px;
     height: 2px;
-    background: #E91E63;
+    background: #651ee9;
     bottom: -25px;
     margin-left: -30px;
 }
@@ -83,7 +82,7 @@
   -moz-border-radius: 100px;
   border-radius: 100px;
   text-align: center;
-  background: #E91E63;
+  background: #4d1ee9;
   color: #fff;
   font-size: 12px;
   margin-right: 20px;

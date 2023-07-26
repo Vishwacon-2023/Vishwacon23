@@ -223,7 +223,7 @@ function validate() {
 }
 
 (function () {
-  const second = 1000,
+  const second = 500,
         minute = second * 60,
         hour = minute * 60,
         day = hour * 24;
