@@ -24,7 +24,8 @@
   font-size: 48px;
   font-weight: bold;
   line-height: 1.2;
-  margin-left: 590px; /* Adjust this value to add space between the image and text */
+  margin-left: 590px;
+  font-family:'Righteous', cursive /* Adjust this value to add space between the image and text */
 }
 /* Container 1 */
 /* Global styles */
