@@ -132,3 +132,10 @@
   font-size: 1.3rem;
   margin: 5%;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .DC-about{
+    flex-direction: column;
+  }
+}
