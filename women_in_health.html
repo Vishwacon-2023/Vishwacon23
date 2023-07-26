@@ -28,6 +28,12 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/women.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/frequently.css" />
   <link rel="stylesheet" type="text/css" href="./assets/css/sal.css" />
+
+      <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+      <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/ConTrack.css" />
+
 </head>
 
 <body>
@@ -40,410 +46,161 @@
     </h1>
   </section>
   <br /><br />
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 mx-auto">
-        <!--
-          <div class="alert alert-primary text-center w-100" role="alert">
-            Registrations for the conference are not open yet!
+<section >
+      <div class="container2">
+        <div class="row">
+          <div class="col-sm-10 mx-auto text-justify">
+            <div class="main_title">
+              <h2>Publication of Accepted Papers</h2>
+              <img src="./assets/img/conTrack.png" alt="Image" class="image-right">
+            </div>
+  
+            <p class="text-justify">
+              Selected papers of the conference will be considered for publication in Scopus / web of science
+              journals identified by organizers. Dependent on the area of paper and content, experts will
+              recommend to a suitable journal for publication. Papers from Core engineering is to be
+              published in Apple Academic Press - CRC press book ‘Smart innovations and Technological
+              Advancements in Civil and Mechanical Engineering’, a Taylor-Francis Group publication.
+             
+            </p>
+            <br \>
+  
+            <div class="main_title">
+              <h2>Guidelines for Authors</h2>
+            </div>
+  
+            <p class="text-justify">
+              Please ensure your submission meets the conference's strict guidelines for accepting scholarly
+              papers. Downloadable versions of the checklist for full-Text Papers along with templates are
+              available on the conference website.
+            </p>
+  
           </div>
-          <br />
-          -->
-
-        <div class="text-center">
-          <p>
-            For Registration and Abstract submission, fill the google form and upload your
-            abstract in doc/docx format:
-          </p>
-          <a href="https://forms.gle/KcFxhQQcaxscDW9j9"
-            target="_blank" class="btn btn-primary buttonTheme">
-            Registration Link</a>
-
-          <br />
-          <br /><br />
-
-          <p>
-            For full paper submission, please submit it on EasyChair:
-          </p>
-
-          <a href="https://easychair.org/conferences/?conf=vishwacon2021" target="_blank"
-            class="btn btn-primary buttonTheme">
-            Submit Full Paper</a>
         </div>
-
-        <!--
-          <form
-            action="register.php"
-            method="post"
-            enctype="multipart/form-data"
-            onsubmit="return validate()"
-          >
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input
-                    name="fname"
-                    type="text"
-                    id="firstName"
-                    class="form-control"
-                    placeholder="Enter first name"
-                    required
-                  />
-                </div>
-                <div class="fnameError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="fnameError"></span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input
-                    name="lname"
-                    type="text"
-                    id="lastName"
-                    class="form-control"
-                    placeholder="Enter last name"
-                    required
-                  />
-                </div>
-                <div class="lnameError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="lnameError"></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    name="email"
-                    type="email"
-                    id="email"
-                    class="form-control"
-                    placeholder="Enter email"
-                    required
-                  />
-                </div>
-                <div class="emailError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="emailError"></span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="mobile">Mobile</label>
-                  <input
-                    name="mobile"
-                    type="tel"
-                    id="mobile"
-                    class="form-control"
-                    placeholder="Enter mobile number"
-                    pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$"
-                    required
-                  />
-                </div>
-                <div class="mobileError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="mobileError"></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="college">College</label>
-                  <input
-                    name="college"
-                    type="text"
-                    id="college"
-                    class="form-control"
-                    placeholder="Enter college name"
-                    required
-                  />
-                </div>
-                <div class="collegeError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="collegeError"></span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">College Year</label>
-                  <select class="form-control" id="year" name="year">
-                    <option>FE</option>
-                    <option>SE</option>
-                    <option>TE</option>
-                    <option>BE</option>
-                    <option>NA</option>
-                  </select>
-                </div>
-                <div class="yearError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="yearError"></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="branch">Branch</label>
-                  <select
-                    class="form-control"
-                    id="branch"
-                    name="branch"
-                    onchange="dynamicDropdown(this.value);"
-                  >
-                    <option value="">Select Branch</option>
-                    <option value="comp">
-                      Computer Science and Engineering</option
-                    >
-                    <option value="civil">Civil Engineering</option>
-                    <option value="mech">Mechanical Engineering</option>
-                    <option value="it">Information Technology</option>
-                    <option value="entc"
-                      >Electronics & Telecommunication Engineering</option
-                    >
-                  </select>
-                </div>
-                <div class="branchError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="branchError"></span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">Paper Domain</label>
-                  <select class="form-control" id="domain" name="domain">
-                    <option value="">Please select Branch first</option>
-                  </select>
-                </div>
-                <div class="domainError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="domainError"></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="paper">Research Paper Title</label>
-                  <input
-                    name="topic"
-                    type="text"
-                    id="paper"
-                    class="form-control"
-                    placeholder="Enter research paper tilte"
-                    required
-                  />
-                </div>
-                <div class="paperError">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="paperError"></span>
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                Upload .doc/.docx version of Research Paper
-                <div class="input-group mt-2">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroupFileAddon01"
-                      >Upload</span
-                    >
-                  </div>
-                  <div class="custom-file">
-                    <input
-                      name="pdf"
-                      type="file"
-                      class="custom-file-input"
-                      id="file"
-                      aria-describedby="inputGroupFileAddon01"
-                    />
-                    <label class="custom-file-label" for="inputGroupFile01"
-                      >Choose file</label
-                    >
-                  </div>
-                </div>
-                <div class="fileError mt-2">
-                  <p class="error">
-                    <i class="fas fa-exclamation-circle"></i>
-                    <span id="fileError"></span>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <br />
-            <div class="text-right">
-              <button
-                type="submit"
-                class="btn btn-primary buttonTheme"
-                name="btn_submit"
-                disabled
-              >
-                Submit
-              </button>
-            </div>
-          </form>
-        -->
       </div>
-    </div>
-  </div>
-  <br />
-  <br />
-  <br />
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-10 mx-auto text-justify">
-          <div class="blog">
-          <div class="main_title">
-            <h2>Publication of Accepted Papers</h2>
+         
+    </section>
+  
+    <section class="container">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <table>
+                <div class="cardname">REGISTRATION FEES</div>
+                <tr>
+                  <th>Category</th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td>Student/Research Scholar (Indian Authors)</td>
+                  <td>₹ 1500</td>
+                </tr>
+                <tr>
+                  <td>International Student/Research Scholar</td>
+                  <td>$ 40</td>
+                </tr>
+                <tr>
+                  <td>Industry Person/Academicians (Indian Authors)</td>
+                  <td>₹ 3000</td>
+                </tr>
+                <tr>
+                  <td>International Industry Person/Academicians</td>
+                  <td>$ 50</td>
+                </tr>
+                <tr>
+                  <td>Participant (Indian)</td>
+                  <td>₹ 500</td>
+                </tr>
+                <tr>
+                  <td>Participant (International)</td>
+                  <td>$ 20</td>
+                </tr>
+              </table>
+            <!-- <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div> -->
           </div>
-
-          <p class="text-justify">
-            Selected papers of the conference will be considered for publication in Scopus / web of science
-journals identified by organizers. Dependent on the area of paper and content, experts will
-recommend to a suitable journal for publication. Papers from Core engineering is to be
-published in Apple Academic Press - CRC press book ‘Smart innovations and Technological
-Advancements in Civil and Mechanical Engineering’, a Taylor-Francis Group publication.
-Papers from Computer and circuit domains is to be published in CRC press book ‘Artificial
-Intelligence in Information and Communication Technologies, Healthcare and Education:
-ARoadmap Ahead’, These will be special issues of the book series from AAP-CRC. Both of
-these books are scopus indexed.
-Organising Committee is happy to discuss the prospects of publications with authors to maintain
-the utmost clarity and transparency. Conference publish an abstract book as a collection of ideas.
-          </p></div>
-<div class="blog">
-          <div class="main_title">
-          <h2>Guidelines for Authors</h2>
+          <div class="slide swiper-slide">
+            <div class="cardname">PAYMENT OPTIONS</div>
+  
+            <table class="table">
+                <tr>
+                  <td class="cardname" colspan="2">NEFT/RTGS VISHWAKARMA INSTITUTE OF INFORMATION TECHNOLOGY</td>
+                </tr>
+                <tr>
+                  <td>BANK:</td>
+                  <td>Punjab National Bank</td>
+                </tr>
+                <tr>
+                  <td>BRANCH:</td>
+                  <td>PUNE-FC-Road</td>
+                </tr>
+                <tr>
+                  <td>ACCOUNT NUMBER:</td>
+                  <td>10881011001265</td>
+                </tr>
+                <tr>
+                  <td>IFSC CODE:</td>
+                  <td>PUNB0108810</td>
+                </tr>
+              </table>
+            
+            <!-- <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div> -->
+          </div>
+          
         </div>
-
-          <p class="text-justify">
-           Please ensure your submission meets the conference's strict guidelines for accepting scholarly
-papers. Downloadable versions of the checklist for full-Text Papers along with templates are
-available on the conference website.
-          </p>
-</div>
-          <!--<ul>
-            <li>
-              All submissions will be considered for publication in UGC CARE
-              and International Journals with DOI numbers.
-            </li>
-            <li>
-              All accepted papers will be published in conference proceedings.
-              Selected papers will be available online on Institute Research
-              Journal - “Vishwakarma Journal Of Engineering Tecnology”
-              (http://www.vjer.in/) ISSN: 2456-8465.
-            </li>
-
-            <li>
-              Selected papers will be published in Scopus Indexed Journals
-              with an additional fee of Rs 8500/- based on journal selection.
-            </li>
-            <li>
-              Authors can contact the organizing team for additional
-              information of Scopus paper submissions. Journals for Scopus-
-              IJITEE, IJRTE, IJEAT.
-            </li>
-          </ul>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+      <!-- Swiper JS -->
+      <script src="./assets/js/swiper-bundle.min.js"></script>
+      <!-- JavaScript -->
+      <script src="./assets/js/script.js"></script>
+     <!-- <section style="background:linear-gradient(90deg,rgb(35, 26, 96),rgb(60, 51, 141)); font-size: 1em;"> -->
+   
+  
+      <div class="container1">
+          <div class="row">
+            <div class="col-sm-10 mx-auto">
+              
+                <!-- <div class="alert alert-primary text-center w-100" role="alert">
+                  Registrations for the conference are not open yet!
+                </div>
+                <br /> -->
+               <div class="text-center">Submission Guidelines
+              </div>
+      
+              <div class="text">
+                <p>
+                  For Registration and Abstract submission, fill the google form and upload your
+                  abstract in doc/docx format:
+                </p>
+                <a href="https://forms.gle/KcFxhQQcaxscDW9j9" target="_blank" class="btn btn-primary buttonTheme">
+                  Registration Link</a>
+      
+                <br />
+                <br /><br />
+      
+                <p>
+                  For full paper submission, please submit it on EasyChair:
+                </p>
+      
+                <a href="https://easychair.org/conferences/?conf=vishwacon2021" target="_blank"
+                  class="btn btn-primary buttonTheme">
+                  Submit Full Paper</a>
+              </div>
+      
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    <br /><br />-->
-    <div class="blog">
-    <div class="main_title">
-      <h2>Registration Fees</h2>
-    </div>
-
-    <div class="row">
-      <div class=" mx-auto">
-        <table class="table table-borderless">
-          <tbody>
-            <tr>
-              <td>Student/Research Scholar (Indian Authors)</td>
-              <td>₹ 1500</td>
-            </tr>
-            <tr>
-              <td>International Student/Research Scholar</td>
-              <td>$ 40</td>
-            </tr>
-            <tr>
-              <td>Industry Person/Academicians (Indian Authors)</td>
-              <td>₹ 3000</td>
-            </tr>
-            <tr>
-              <td>International Industry Person/Academicians</td>
-              <td>$ 50</td>
-            </tr>
-            <tr>
-              <td> Participant (Indian) </td>
-              <td>₹ 500</td>
-            </tr>
-            <tr>
-              <td> Participant (International) </td>
-              <td>$ 20</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div></div>
-    <div class="blog">
-    <div class="main_title">
-      <h2>Payment Options</h2>
-    </div>
-
-    <div class="row">
-      <div class=" mx-auto">
-        <h4 class="text-center">NEFT/ RTGS</h4>
-        <h5 class="text-center">
-          VISHWAKARMA INSTITUTE OF INFORMATION TECHNOLOGY
-        </h5>
-        <br />
-        <table class="table table-borderless">
-          <tbody>
-            <tr>
-              <td>BANK</td>
-              <td>Punjab National Bank</td>
-            </tr>
-            <tr>
-              <td>BRANCH</td>
-              <td>PUNE-FC-Road</td>
-            </tr>
-            <tr>
-              <td>ACCOUNT NUMBER</td>
-              <td>10881011001265</td>
-            </tr>
-            <tr>
-              <td>IFSC CODE</td>
-              <td>PUNB0108810</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div></div>
-  </section>
+      
+  
   <br /><br /><section class="faq-section">
     <div class="container">
       <div class="d-flex flex-column">
