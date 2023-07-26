@@ -10,7 +10,7 @@
 
 /*  */
 .ConfBanner {
-  background: url('../img/business-meeting.webp'); /* Replace with the path to your image */
+  background: url('../img/business.jpg'); /* Replace with the path to your image */
   background-size: cover;
   background-position: center;
   height: 100vh; /* 100% of viewport height */
@@ -20,11 +20,11 @@
 
 /* Heading styles */
 .ConfBanner h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 48px;
   font-weight: bold;
   line-height: 1.2;
-  margin-left: 50px; /* Adjust this value to add space between the image and text */
+  margin-left: 590px; /* Adjust this value to add space between the image and text */
 }
 /* Container 1 */
 /* Global styles */
@@ -36,7 +36,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #e3f2fd;
+  /* background-color: #e3f2fd; */
 }
 
 .text-center {
@@ -144,7 +144,7 @@ th {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #e3f2fd;
+  /* background-color: #e3f2fd; */
 }
 
 .text-center {
@@ -251,12 +251,12 @@ th {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #e3f2fd;
+  /* background-color: #e3f2fd; */
 
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e3f2fd;
+  /* background-color: #e3f2fd; */
 }
 .testimonial {
   position: relative;
@@ -358,7 +358,7 @@ td ,th{
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #e3f2fd;
+  /* background-color: #e3f2fd; */
   
 }
 
