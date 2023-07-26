@@ -716,3 +716,9 @@ nav .navbar-nav li a {
   color: #ffffff;
   background-color: #252525;
 }
+.main_title{
+  text-align: center !important;
+}
+.blog{
+  margin-bottom: 70px;
+}
