@@ -523,6 +523,9 @@ h1 {
   .main_title h2 {
     font-size: 40px;
   }
+  .about_us_image_box{
+    display: none;
+  }
 
   .about_us_area .about_us_image_box {
     display: none;
